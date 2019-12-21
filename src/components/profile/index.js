@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ReactAudioPlayer from 'react-audio-player';
 
+import { Audio } from '../audio';
+
 class Profile extends Component {
     render() {
         return (
@@ -13,7 +15,7 @@ class Profile extends Component {
                     src="https://data51.chiasenhac.com/downloads/1007/4/1006303-a3d499cf/320/Boulevard%20Of%20Broken%20Dreams%20-%20Green%20Day.mp3"
                     autoPlay
                     controls
-                    controlsList='nodownload'
+                    
                 />
                 <br />
                 <br />
@@ -26,6 +28,12 @@ class Profile extends Component {
                     controls
                     controlsList='nodownload'
                 /><div> Autoplay set to false</div>
+
+                <br />
+                <br />
+                <br />
+                <p>Without using any package. Just relying on the functional component </p>
+                <Audio src='https://www.w3schools.com/tags/horse.ogg' />
             </div>
         )
     }
